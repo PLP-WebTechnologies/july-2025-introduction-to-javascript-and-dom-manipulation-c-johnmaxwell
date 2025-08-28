@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLP web dev week 5 assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🚀 JavaScript Mastery Dashboard</h1>
+        <p>Demonstrating Variables, Functions, Loops, and DOM Manipulation</p>
+      </div>
+
+      <!-- PART 1: JavaScript Basics -->
+      <div class="section">
+        <h2>🎯 Part 1: JavaScript Basics - Variables & Conditionals</h2>
+
+        <div class="input-group">
+          <label for="userName">Enter your name:</label>
+          <input type="text" id="userName" placeholder="Your name here..." />
+        </div>
+
+        <div class="input-group">
+          <label for="userAge">Enter your age:</label>
+          <input type="number" id="userAge" placeholder="25" />
+        </div>
+
+        <div class="input-group">
+          <label for="favoriteColor">Choose your favorite color:</label>
+          <select id="favoriteColor">
+            <option value="">Select a color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+            <option value="orange">Orange</option>
+          </select>
+        </div>
+
+        <button class="btn" onclick="analyzeUserData()">Analyze My Data</button>
+
+        <div id="userAnalysis" class="result-box hidden">
+          <!-- Results will appear here -->
+        </div>
+      </div>
+
+      <!-- PART 2: Functions -->
+      <div class="section">
+        <h2>❤️ Part 2: JavaScript Functions - Reusable Logic</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Calculator Function</h3>
+            <div class="input-group">
+              <input type="number" id="num1" placeholder="First number" />
+              <input type="number" id="num2" placeholder="Second number" />
+            </div>
+            <button class="btn" onclick="performCalculation()">
+              Calculate Sum
+            </button>
+            <div id="calcResult"></div>
+          </div>
+
+          <div class="card">
+            <h3>Text Formatter Function</h3>
+            <div class="input-group">
+              <input
+                type="text"
+                id="textInput"
+                placeholder="Enter some text..."
+              />
+            </div>
+            <button class="btn" onclick="formatText()">Format Text</button>
+            <div id="textResult"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 3: Loops -->
+      <div class="section">
+        <h2>🔁 Part 3: JavaScript Loops - Power of Repetition</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Countdown Timer (While Loop)</h3>
+            <button class="btn" onclick="startCountdown()">
+              Start 10 Second Countdown
+            </button>
+            <div class="counter" id="countdown">Ready!</div>
+          </div>
+
+          <div class="card">
+            <h3>Number Pattern (For Loop)</h3>
+            <button class="btn" onclick="generatePattern()">
+              Generate Pattern
+            </button>
+            <div id="pattern"></div>
+          </div>
+
+          <div class="card">
+            <h3>Array Iterator (forEach Loop)</h3>
+            <button class="btn" onclick="displayFruits()">
+              Show Fruit List
+            </button>
+            <div id="fruitList"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 4: DOM Manipulation -->
+      <div class="section">
+        <h2>🌐 Part 4: DOM Manipulation - Interactive Elements</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Dynamic Content Toggle</h3>
+            <button class="btn" onclick="toggleContent()">
+              Toggle Secret Message
+            </button>
+            <div id="secretMessage" class="hidden">
+              <p class="highlight">
+                🎉 Congratulations! You've mastered DOM manipulation!
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Dynamic Element Creation</h3>
+            <div class="input-group">
+              <input
+                type="text"
+                id="todoInput"
+                placeholder="Add a new task..."
+              />
+            </div>
+            <button class="btn" onclick="addTodo()">Add Task</button>
+            <div id="todoList"></div>
+          </div>
+
+          <div class="card">
+            <h3>Style Manipulation</h3>
+            <button class="btn" onclick="changeTheme()">Change Theme</button>
+            <p id="themeText">
+              Click the button to experience dynamic styling!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
